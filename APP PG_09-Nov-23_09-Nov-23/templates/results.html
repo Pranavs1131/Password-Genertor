@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator - Results</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Set your desired background color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            list-style: none;
+            text-align: left;
+        }
+        li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generated Passwords</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Registration Number</th>
+            <th>Password</th>
+        </tr>
+        {% for result in generated_results %}
+            <tr>
+                <td>{{ result.name }}</td>
+                <td>{{ result.reg_number }}</td>
+                <td>{{ result.password }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Go Back</a>
+</body>
+</html>
+

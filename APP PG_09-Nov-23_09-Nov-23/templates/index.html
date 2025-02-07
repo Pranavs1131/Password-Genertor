@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Password Generator</title>
+  <style>
+    body {
+      background-color: #f0f0f0; /* Set your desired background color */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Password Generator</h1>
+  <form action="/generate_password" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="reg_number">Registration Number:</label>
+    <input type="text" name="reg_number" id="reg_number" required><br>
+
+    <label for="password_length">Password Length:</label>
+    <input type="text" name="password_length" id="password_length" required><br>
+
+    <label for="num_combinations">Number of Passwords to Generate:</label>
+    <input type="text" name="num_combinations" id="num_combinations" required><br>
+
+    <input type="submit" value="Generate Passwords">
+</form>
+  <br>
+  <a href="/saved_passwords">View Saved Passwords</a>
+</body>
+
+</html>
